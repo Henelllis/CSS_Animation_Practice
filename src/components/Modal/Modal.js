@@ -4,11 +4,12 @@ import './Modal.css';
 
 const modal = (props) => {
 
-    const cssClasses = ['Modal', props.show ? 'ModalOpen' : 'ModalClose'];
+    let cssClasses = ["Modal", props.show ? "ModalOpen" : "ModalClose"];
 
 
+    console.log('[cssClases]' , cssClasses);
     return (
-        <div className={cssClasses.join(" ")}>
+        <div className={cssClasses.join(' ')}>
             <h1>A Modal</h1>
             <button className="Button" onClick={props.closed}>Dismiss</button>
         </div>
